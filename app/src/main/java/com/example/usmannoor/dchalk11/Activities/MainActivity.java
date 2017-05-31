@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    //TODO remove
+         //TODO remove testing stuff
         ((ImageButton)(findViewById(R.id.camera_btn))).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    JDBC_SETUP jdbc_setup =new JDBC_SETUP();
-        jdbc_setup.main();
-    }
+        JDBC_SETUP jdbc_setup =new JDBC_SETUP();
+            jdbc_setup.main();
+        }
 
     private void select_image() {
         final CharSequence[] items = {"Camera", "Gallery", "Cancel"};
