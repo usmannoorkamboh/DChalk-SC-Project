@@ -1,12 +1,9 @@
 package com.example.usmannoor.dchalk11.CoreClasses;
 
 
-import com.example.usmannoor.dchalk11.JDBC.Connect_to_database;
+import com.example.usmannoor.dchalk11.Asynctasks.Connect_to_database;
 
 import java.sql.*;
-
-import static android.os.AsyncTask.Status.FINISHED;
-import static android.os.AsyncTask.Status.PENDING;
 
 /**
  * Created by Noman on 5/31/2017.
@@ -25,8 +22,8 @@ public class JDBC_SETUP {
         Statement stmt = null;
         try{
 
-            Connect_to_database ctd=new Connect_to_database(this);
-            ctd.execute();
+          //  Connect_to_database ctd=new Connect_to_database(this);
+          //  ctd.execute();
            while (conn==null){
             System.out.print("Connecting");
            }

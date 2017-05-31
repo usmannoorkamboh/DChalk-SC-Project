@@ -115,9 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        JDBC_SETUP jdbc_setup =new JDBC_SETUP();
-            jdbc_setup.main();
-        }
+      }
 
     private void select_image() {
         final CharSequence[] items = {"Camera", "Gallery", "Cancel"};

@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.usmannoor.dchalk11.BO.UsersDAO;
 import com.example.usmannoor.dchalk11.R;
 
 public class Login extends AppCompatActivity {
@@ -36,6 +37,9 @@ public class Login extends AppCompatActivity {
 
                     //TODO authenticate to dao
 
+                    UsersDAO usersDAO=new UsersDAO();
+                    usersDAO.connect_to_db();
+                    //-----
 
                     Intent intent = new Intent(Login.this, MainActivity.class);
                     startActivity(intent);
