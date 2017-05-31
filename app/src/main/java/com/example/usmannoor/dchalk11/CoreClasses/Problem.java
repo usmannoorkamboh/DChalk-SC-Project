@@ -6,11 +6,20 @@ package com.example.usmannoor.dchalk11.CoreClasses;
 
 public class Problem {
    private String pictureblob;
+    private int floated_by;
+
+
+
     private  Double lat;
     private Double lon;
     private boolean status;
-
-
+    public Problem(String pictureblob, int floated_by, Double lat, Double lon, boolean status) {
+        this.pictureblob = pictureblob;
+        this.floated_by = floated_by;
+        this.lat = lat;
+        this.lon = lon;
+        this.status = status;
+    }
     public String getPictureblob() {
         return pictureblob;
     }
@@ -41,5 +50,13 @@ public class Problem {
 
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    public int getFloated_by() {
+        return floated_by;
+    }
+
+    public void setFloated_by(int floated_by) {
+        this.floated_by = floated_by;
     }
 }

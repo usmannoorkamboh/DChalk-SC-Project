@@ -16,6 +16,9 @@ allprojects {
     repositories {
         jcenter()
     }
+    tasks.withType(JavaCompile) {
+
+    }
 }
 
 task clean(type: Delete) {

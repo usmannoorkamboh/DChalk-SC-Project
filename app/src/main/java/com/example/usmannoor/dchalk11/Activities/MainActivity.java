@@ -20,8 +20,11 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.example.usmannoor.dchalk11.CoreClasses.JDBC_SETUP;
 import com.example.usmannoor.dchalk11.R;
 
 
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -97,6 +102,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         // ************************  //
+
+
+
+
+    //TODO remove
+        ((ImageButton)(findViewById(R.id.camera_btn))).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,Dashboard.class);
+                startActivity(intent);
+
+            }
+        });
+    JDBC_SETUP jdbc_setup =new JDBC_SETUP();
+        jdbc_setup.main();
     }
 
     private void select_image() {
