@@ -2,9 +2,7 @@ package com.example.usmannoor.dchalk11.Asynctasks;
 
 import android.os.AsyncTask;
 
-import com.example.usmannoor.dchalk11.BO.UsersDAO;
-import com.example.usmannoor.dchalk11.CoreClasses.JDBC_SETUP;
-import com.example.usmannoor.dchalk11.CoreClasses.User;
+import com.example.usmannoor.dchalk11.DAO.UsersDAO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,6 +12,9 @@ import java.sql.SQLException;
  * Created by Noman on 5/31/2017.
  */
 
+/**
+ * CLass used to connect to the database
+ */
 public class Connect_to_database extends AsyncTask {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://foxi.wuffhost.ovh/noman_sc_project";
@@ -30,6 +31,10 @@ public class Connect_to_database extends AsyncTask {
     UsersDAO usersDAO;
     Connection conn = null;
 
+    /**
+     *
+     * @param ud
+     */
     public Connect_to_database(UsersDAO ud){
         this.usersDAO=ud;
 

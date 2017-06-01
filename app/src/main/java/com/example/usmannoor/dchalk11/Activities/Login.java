@@ -7,16 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.usmannoor.dchalk11.BO.UsersDAO;
+import com.example.usmannoor.dchalk11.DAO.UsersDAO;
 import com.example.usmannoor.dchalk11.R;
 
 import static com.example.usmannoor.dchalk11.R.color.offwhite;
 
+/**
+ * The first activity visiible to user which prompts for sgnin
+ */
 public class Login extends AppCompatActivity {
     ImageButton loginbutton;
     ImageButton signupbutton;
@@ -39,21 +41,22 @@ public class Login extends AppCompatActivity {
         username = (TextView) findViewById(R.id.username);
         password = (TextView) findViewById(R.id.password);
 
-
+        /**
+         * Onclick listener for the login button data goes to dao for authentication
+         * and the dao returns user id of the person logging in
+         */
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (username.getText().toString().length() > 1 && password.getText().toString().length() > 1) {
 
 
-                    //TODO authenticate to dao
 
                     UsersDAO usersDAO = new UsersDAO();
                     int id = usersDAO.authenticate(username.getText().toString(), password.getText().toString());
                     //-----
 
-                    //TODO check login
-                    if (id > 0) {
+                     if (id > 0) {
                         System.out.println("LOGGING IN with  "+id );
                         Intent intent = new Intent(Login.this, MainActivity.class);
                         Bundle b = new Bundle();
@@ -69,6 +72,11 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+
+        /**
+         *
+         * Start a new activity on signup onclick
+         */
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

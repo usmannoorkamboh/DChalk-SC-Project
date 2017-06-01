@@ -1,6 +1,5 @@
 package com.example.usmannoor.dchalk11.Activities;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +7,12 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.usmannoor.dchalk11.BO.UsersDAO;
+import com.example.usmannoor.dchalk11.DAO.UsersDAO;
 import com.example.usmannoor.dchalk11.CoreClasses.User;
 import com.example.usmannoor.dchalk11.R;
+/**
+ * Signup PAge for getting user data and registering
+ */
 
 public class signup_page extends AppCompatActivity {
     TextView name;

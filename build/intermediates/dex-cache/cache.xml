@@ -12,12 +12,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\junit-4.12_0b08177345c5d0ddf95ae9aa2152c4218abadbe7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Noman\.android\build-cache\b5d76ccd9223bd7efd6536adecba3e3383be309c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
         <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_089ed239ead864379a3df092bcbf228208bc97a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\177dc286c01f9269396e21f17ba2c710271d5a47\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_89b3c76110e9ef52cfda44aa95fe072ba45aceb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\13a9c700ff9c79c4180fcd185ef8e7ad9b325cff\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_af62aba2c2b32d3ba44d1205c3fa61cdb19b6125.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\jsr305-2.0.1_4177b18b3268f549171ea4c9e0d857533a3def35.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,21 +66,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Noman\.android\build-cache\4f97ba195a69cfcdfd07865af368f4aed2f68fe2\output\jars\classes.jar"
+        jar="C:\Users\Noman\.android\build-cache\24ce65bc1a22615839b52785f877a2e8a5726b29\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_87ab4b350f05d92cfb2adf9d5afa012cb5ac4694.jar" />
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\classes_63da9cad71b6b4f63157cc7e3badf6f12a1d0cc9.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Noman\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\b8c22c62198f0584572cf35450c819439d9b5340\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_e72e2c916f002658b68eb2a618a97a3e5721ad2c\classes.dex" />
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\classes_e7c739153be3181f1983175f22c3f90790fefe24.jar" />
     </item>
     <item
         is-multidex="false"
@@ -54,15 +90,6 @@
         revision="25.0.1"
         sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
         <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_41c20f2634aac3930c0e55b04bb4e8c0942d2238.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Noman\.android\build-cache\efcd9bf3dae3345c74d825bd29d6c5c7efda668a\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="518768f3200963fbfec652f498da2c9d39245234">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_d48cda7e503cfc292e58b5443bdd7de4b9a31a12.jar" />
     </item>
     <item
         is-multidex="false"
@@ -83,24 +110,6 @@
         <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_63541575e8ebf948cdb097792a3d86c7a3c75742.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_eb921faa3f3b1844e2ac88774450c7507fcb1628\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Noman\.android\build-cache\1dbe2779fd99e0f912b143b104a3c36363fb163a\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9c7db50c41bf023476ca9ce9f9f9e845e5154930\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.6\380ef5226de2c85ff3b38cbfefeea881c5fce09d\mysql-connector-java-5.1.6.jar"
         jumboMode="false"
@@ -110,22 +119,31 @@
         <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\mysql-connector-java-5.1.6_4bbf05044717b2c28e8141483790a53304cf9331.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Noman\.android\build-cache\448dd844e21f82da3c88e06ed434a746f14561cf\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b399795f54a7a3ed1f2d58573686c49f5ea658e1\classes.dex" />
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-integration-1.3_da82cb2c64c8c7dfc235e433249537d9ea2c737e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Noman\.android\build-cache\13a9c700ff9c79c4180fcd185ef8e7ad9b325cff\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_af62aba2c2b32d3ba44d1205c3fa61cdb19b6125\classes.dex" />
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\javax.inject-1_63a467a674405cf1b89a38e2af7aa50673b520f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\f41b07317b2717a29bb7e7cf4b91d2fe0764e817\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_723366556965c115e9fb5b95f0e100912301c733.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,6 +165,150 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\718f39a34e6c941c78d9a127ec497fb2186089e4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\classes_8d1c9796bc5007b9d459a9a1c72afc7f6d442063.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\fbae90b13a55ad8ea4c99b502a8de89908ef9892\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_2301746cc17634b15a33d6401e43bd876523b17f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\b56bc8586e3831a3cb51e3b83368fce473310e0b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_5b060ec3083537edd1092cabbf04cfbc0d54a71f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\2c6749b817f12a206d6b40e9f71b8c4e872a4d7f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\classes_1bad49de985dee5d5d90449a2aef2543b00485e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\c3bd9694930a75d96cab541be0e8db4b78e3cc4b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_4d2688aa62468ebaaa3071aba1d4906f7972c66b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\javax.annotation-api-1.2_87c5a28de96915812d8af4302fa9c39338c45f82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\4f97ba195a69cfcdfd07865af368f4aed2f68fe2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_87ab4b350f05d92cfb2adf9d5afa012cb5ac4694.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\1dbe2779fd99e0f912b143b104a3c36363fb163a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_9c7db50c41bf023476ca9ce9f9f9e845e5154930.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\bcc83b4228206f3050f585e7120a4a974650a2df\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\classes_c2a8b2531bf94ce6db379e58bc6ffa26daf78d30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_e72e2c916f002658b68eb2a618a97a3e5721ad2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\efcd9bf3dae3345c74d825bd29d6c5c7efda668a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_d48cda7e503cfc292e58b5443bdd7de4b9a31a12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.3_bffcef0a3e18fc8f2719ae2d7501631e580b41d4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_eb921faa3f3b1844e2ac88774450c7507fcb1628\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\javawriter-2.1.1_899e05ff0ffec803b08aa8edc3e7b29da9258252.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.android\build-cache\448dd844e21f82da3c88e06ed434a746f14561cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_b399795f54a7a3ed1f2d58573686c49f5ea658e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Noman\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-library-1.3_25dd44d18a5350fd8dba433704b75364cc7bfc88.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Noman\.android\build-cache\318567859cb9eac77f28d65ccd10ad3611baecb2\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -162,51 +324,6 @@
         revision="25.0.1"
         sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
         <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_778ad53dadfb4ca570914fef95f86ab272c90698.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Noman\.android\build-cache\f41b07317b2717a29bb7e7cf4b91d2fe0764e817\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_723366556965c115e9fb5b95f0e100912301c733\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Noman\.android\build-cache\fbae90b13a55ad8ea4c99b502a8de89908ef9892\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_2301746cc17634b15a33d6401e43bd876523b17f.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Noman\.android\build-cache\b56bc8586e3831a3cb51e3b83368fce473310e0b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5b060ec3083537edd1092cabbf04cfbc0d54a71f\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Noman\.android\build-cache\c3bd9694930a75d96cab541be0e8db4b78e3cc4b\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\pre-dexed\debug\classes_4d2688aa62468ebaaa3071aba1d4906f7972c66b.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Noman\.android\build-cache\177dc286c01f9269396e21f17ba2c710271d5a47\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
-        <dex dex="C:\Users\Noman\Documents\GitHub\DChalk-SC-Project\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_89b3c76110e9ef52cfda44aa95fe072ba45aceb0\classes.dex" />
     </item>
 
 </items>

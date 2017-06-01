@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -20,32 +22,25 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-import com.example.usmannoor.dchalk11.BO.ProblemDao;
-import com.example.usmannoor.dchalk11.CoreClasses.JDBC_SETUP;
-import com.example.usmannoor.dchalk11.CoreClasses.Problem;
+import com.example.usmannoor.dchalk11.DAO.ProblemDao;
 import com.example.usmannoor.dchalk11.R;
 
-
+/**
+ * Home of the app after logging in which is also used to post a problem
+ */
 public class MainActivity extends AppCompatActivity {
-
 
 
     int userID;
 
     ImageView ivImage;
-
-    Location location1;
-    Double latiti;
+    Double lati, longi;
     LocationListener locationListener;
     LocationManager locationManager;
-
-
     Integer REQUEST_CAMERA = 1, SELECT_FILE = 0;
-
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -53,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Bundle b = getIntent().getExtras();
         int id = b.getInt("userid");
+
+        System.out.println("IN MAIN ACTIVITY  "+id);
+
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -65,8 +63,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onLocationChanged(Location location) {
-                location1=location;
-                //txt.append("\n" + location.getLatitude() + ", " + location.getLongitude());
+                longi = location.getLongitude();
+                lati = location.getLatitude();
+                System.out.println("\nlocatio" + location.getLatitude() + ", " + location.getLongitude());
             }
 
             @Override
@@ -110,19 +109,27 @@ public class MainActivity extends AppCompatActivity {
         // ************************  //
 
 
-
-
-         //TODO remove testing stuff
-        ((ImageButton)(findViewById(R.id.camera_btn))).setOnClickListener(new View.OnClickListener() {
+        //TODO remove testing stuff
+        ((ImageButton) (findViewById(R.id.Uploadbutt))).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MainActivity.this,Dashboard.class);
+                submit();
+
+            }
+        });
+        ((ImageButton) (findViewById(R.id.dashboardbutt))).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Dashboard.class);
                 startActivity(intent);
 
             }
         });
-      }
+    }
 
+    /**
+     *
+     */
     private void select_image() {
         final CharSequence[] items = {"Camera", "Gallery", "Cancel"};
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -145,6 +152,12 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 
+    /**
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == Activity.RESULT_OK) {
@@ -160,22 +173,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-public void submit(View v){
-    //lat
-    //lon
-    //pivtur
+    public void submit() {
+        //lat
+        //lon
+        //pivtur
 
-    int user_id=userID=1;
-    ImageView imview=ivImage;
-    Double lat=location1.getLatitude();
-    Double lon=location1.getLongitude();
+        int user_id = userID = 1;
+        ImageView imview = ivImage;
+        get_location();
 
-    ProblemDao problemdao=new ProblemDao();
+        Double lat = lati;
+        Double lon = longi;
+        ProblemDao problemdao = new ProblemDao();
+        System.out.println(user_id + "uploading" + lati + longi);
+        BitmapDrawable drawable = (BitmapDrawable) imview.getDrawable();
+        problemdao.upload(user_id, lat, lon, drawable);
 
-    problemdao.upload(user_id,lat,lon,imview);
+        //TODO Upload To Server
+    }
 
-    //TODO Upload To Server
-}
     //onclick for gallery button
     public void gallery(View v) {
         select_image();
@@ -194,8 +210,25 @@ public void submit(View v){
 
     public void get_location() {
 
-        locationManager.requestLocationUpdates("gps", 2000, 0, locationListener);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
 
+        Criteria criteria = new Criteria();
+        String bestProvider = locationManager.getBestProvider(criteria, false);
+        android.location.Location location = locationManager.getLastKnownLocation(bestProvider);
+        if(location!=null) {
+            lati = location.getLatitude();
+            longi = location.getLongitude();
+        }
+        locationManager.requestLocationUpdates("gps", 1000, 0, locationListener);
 
     }
 }

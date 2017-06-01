@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.example.usmannoor.dchalk11.DAO.UsersDAO;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -23,4 +25,29 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.example.usmannoor.dchalk11", appContext.getPackageName());
     }
+
+    @Test
+    public void logincheck() {
+        UsersDAO usersDAO = new UsersDAO();
+        int a = usersDAO.authenticate("ol", "ol");
+        assertTrue(a > 0);
+
+    }
+    @Test
+    public void logincheckinvalid() {
+        UsersDAO usersDAO = new UsersDAO();
+        int a = usersDAO.authenticate("poi", "ol");
+        assertTrue(a < 1);
+
+    }
+
+    @Test
+    public void logincheckinvali() {
+        UsersDAO usersDAO = new UsersDAO();
+        int a = usersDAO.authenticate("oo", "ol");
+        assertTrue(a < 1);
+
+    }
+
+
 }

@@ -1,11 +1,16 @@
 package com.example.usmannoor.dchalk11.CoreClasses;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by Noman on 5/31/2017.
  */
 
+/**
+ * Problem
+ */
 public class Problem {
-   private String pictureblob;
+    Bitmap bmimage  ;
     private int floated_by;
 
 
@@ -13,19 +18,27 @@ public class Problem {
     private  Double lat;
     private Double lon;
     private boolean status;
-    public Problem(String pictureblob, int floated_by, Double lat, Double lon, boolean status) {
-        this.pictureblob = pictureblob;
-        this.floated_by = floated_by;
-        this.lat = lat;
+
+    /**
+     *
+     * @param pictureblob
+     * @param lat
+     * @param lon
+     * @param status
+     */
+    public Problem(Bitmap pictureblob,  Double lat, Double lon, boolean status) {
+        this.bmimage = pictureblob;
+         this.lat = lat;
         this.lon = lon;
         this.status = status;
     }
-    public String getPictureblob() {
-        return pictureblob;
+
+    public Bitmap getBmimage() {
+        return bmimage;
     }
 
-    public void setPictureblob(String pictureblob) {
-        this.pictureblob = pictureblob;
+    public void setBmimage(Bitmap bmimage) {
+        this.bmimage = bmimage;
     }
 
     public Double getLat() {

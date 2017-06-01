@@ -2,12 +2,11 @@ package com.example.usmannoor.dchalk11.Asynctasks;
 
 import android.os.AsyncTask;
 
-import com.example.usmannoor.dchalk11.BO.UsersDAO;
+import com.example.usmannoor.dchalk11.DAO.UsersDAO;
 import com.example.usmannoor.dchalk11.CoreClasses.User;
 import com.example.usmannoor.dchalk11.JDBC.Db_conn;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -20,6 +19,11 @@ public class Signup extends AsyncTask {
     User user;
     UsersDAO usersDAO;
 
+    /**
+     *
+     * @param u
+     * @param ud
+     */
     public Signup(User u, UsersDAO ud) {
         user = u;
         usersDAO = ud;

@@ -27,6 +27,9 @@ import com.example.usmannoor.dchalk11.R;
  * Created by Noman on 5/31/2017.
  */
 
+/**
+ *Adapter class to load card to dashboard
+ */
 public class rcadapter extends RecyclerView.Adapter<rcadapter.PersonViewHolder> {
     List<Problem> Problems;
 
@@ -50,8 +53,7 @@ public class rcadapter extends RecyclerView.Adapter<rcadapter.PersonViewHolder> 
             lon = (TextView) itemView.findViewById(R.id.lon);
             photo = (ImageView) itemView.findViewById(R.id.photo);
             navbutton=(Button)itemView.findViewById(R.id.Navigatebutton);
-            resolve=(Button)itemView.findViewById(R.id.Navigatebutton);
-        }
+         }
     }
 
     @Override
@@ -71,7 +73,8 @@ public class rcadapter extends RecyclerView.Adapter<rcadapter.PersonViewHolder> 
         personViewHolder.lon.setText(Problems.get(i).getLon().toString());
         personViewHolder.lat.setText(Problems.get(i).getLat().toString());
         personViewHolder.personName.setText("Anonymous");
-        personViewHolder.photo.setImageResource(R.drawable.bg2);
+
+        personViewHolder.photo.setImageBitmap(Problems.get(i).getBmimage());
         personViewHolder.navbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,12 +85,7 @@ public class rcadapter extends RecyclerView.Adapter<rcadapter.PersonViewHolder> 
                 view.getContext().startActivity(mapIntent);
             }
         });
-        personViewHolder.resolve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-             //TODO delete the problem
-            }
-        });
+
 
 
 

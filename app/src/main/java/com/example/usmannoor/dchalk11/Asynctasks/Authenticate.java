@@ -2,7 +2,7 @@ package com.example.usmannoor.dchalk11.Asynctasks;
 
 import android.os.AsyncTask;
 
-import com.example.usmannoor.dchalk11.BO.UsersDAO;
+import com.example.usmannoor.dchalk11.DAO.UsersDAO;
 import com.example.usmannoor.dchalk11.JDBC.Db_conn;
 
 import java.sql.Connection;
@@ -15,12 +15,21 @@ import java.sql.Statement;
  * Created by Noman on 5/31/2017.
  */
 
+/**
+ * Class used to authenticate gets a uname pass and checks in the db
+ */
 public class Authenticate extends AsyncTask {
     String uname;
     String pass;
     Connection connection;
     UsersDAO usersDAO;
 
+    /**
+     *
+     * @param usernamem
+     * @param password
+     * @param usersDAO
+     */
     public Authenticate(String usernamem, String password, UsersDAO usersDAO) {
         uname = usernamem;
         pass = password;

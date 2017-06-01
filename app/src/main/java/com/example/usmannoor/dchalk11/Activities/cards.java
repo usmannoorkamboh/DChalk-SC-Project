@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import com.example.usmannoor.dchalk11.R;
 
+/**
+ * Activity for cards
+ */
 public class cards extends AppCompatActivity {
 
     @Override

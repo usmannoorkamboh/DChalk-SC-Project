@@ -4,6 +4,9 @@ package com.example.usmannoor.dchalk11.CoreClasses;
  * Created by Noman on 5/31/2017.
  */
 
+/**
+ * Container for user profile
+ */
 public class User{
     private  int id;
     private   String username;
@@ -11,6 +14,13 @@ public class User{
     private  String Name;
     private  String email;
 
+    /**
+     *
+     * @param username
+     * @param password
+     * @param email
+     * @param name
+     */
     public User(String username, String password, String email,String name ) {
          this.username = username;
         this.password = password;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -21,11 +22,11 @@
     <ImageView android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/gallery_btn"
+        android:layout_above="@+id/Selectbutt"
         android:layout_below="@+id/imageView" />
 
     <ImageButton
-        android:id="@+id/camera_btn"
+        android:id="@+id/Uploadbutt"
         android:layout_width="175dp"
         android:layout_height="70dp"
         android:background="#00000000"
@@ -36,14 +37,28 @@
         android:layout_alignParentStart="true" />
 
     <ImageButton
-        android:id="@+id/gallery_btn"
+        android:id="@+id/Selectbutt"
         android:layout_width="160dp"
         android:layout_height="70dp"
-        android:layout_above="@+id/camera_btn"
+        android:layout_above="@+id/Uploadbutt"
         android:layout_alignParentStart="true"
         android:background="#00000000"
         android:onClick="gallery"
 
         android:scaleType="centerInside"
         android:src="@drawable/upload" />
+
+    <ImageButton
+        android:id="@+id/dashboardbutt"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:background="#00000000"
+        android:onClick="gallery"
+        android:scaleType="centerInside"
+        android:src="@drawable/gallerybutton"
+         />
+
 </RelativeLayout>
