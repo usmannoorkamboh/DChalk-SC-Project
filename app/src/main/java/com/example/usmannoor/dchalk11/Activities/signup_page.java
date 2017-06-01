@@ -8,6 +8,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.usmannoor.dchalk11.BO.UsersDAO;
+import com.example.usmannoor.dchalk11.CoreClasses.User;
 import com.example.usmannoor.dchalk11.R;
 
 public class signup_page extends AppCompatActivity {
@@ -40,6 +42,13 @@ public class signup_page extends AppCompatActivity {
                 {
 
                     //TODO sign up to dao
+                    UsersDAO usersDAO=new UsersDAO();
+                   int flag= usersDAO.signup(new User(
+                            username.getText().toString(),
+                            password.getText().toString(),
+                            email.getText().toString(),
+                            name.getText().toString()           ));
+
 
                 }
 

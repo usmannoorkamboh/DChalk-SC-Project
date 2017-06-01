@@ -24,7 +24,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import com.example.usmannoor.dchalk11.BO.ProblemDao;
 import com.example.usmannoor.dchalk11.CoreClasses.JDBC_SETUP;
+import com.example.usmannoor.dchalk11.CoreClasses.Problem;
 import com.example.usmannoor.dchalk11.R;
 
 
@@ -32,22 +34,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+    int userID;
 
     ImageView ivImage;
 
-
+    Location location1;
+    Double latiti;
     LocationListener locationListener;
     LocationManager locationManager;
 
 
     Integer REQUEST_CAMERA = 1, SELECT_FILE = 0;
 
+
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
+        Bundle b = getIntent().getExtras();
+        int id = b.getInt("userid");
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -57,9 +62,10 @@ public class MainActivity extends AppCompatActivity {
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
         locationListener = new LocationListener() {
+
             @Override
             public void onLocationChanged(Location location) {
-
+                location1=location;
                 //txt.append("\n" + location.getLatitude() + ", " + location.getLongitude());
             }
 
@@ -155,6 +161,18 @@ public class MainActivity extends AppCompatActivity {
 
 
 public void submit(View v){
+    //lat
+    //lon
+    //pivtur
+
+    int user_id=userID=1;
+    ImageView imview=ivImage;
+    Double lat=location1.getLatitude();
+    Double lon=location1.getLongitude();
+
+    ProblemDao problemdao=new ProblemDao();
+
+    problemdao.upload(user_id,lat,lon,imview);
 
     //TODO Upload To Server
 }

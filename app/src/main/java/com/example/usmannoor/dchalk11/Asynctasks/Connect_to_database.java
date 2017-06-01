@@ -20,7 +20,12 @@ public class Connect_to_database extends AsyncTask {
     //  Database credentials
     static final String USER = "noman_JAVA";
     static final String PASS = "!@#$1234";
-
+/*
+    static final String DB_URL = "jdbc:mysql://foxi.wuffhost.ovh/noman_test";
+    //  Database credentials
+    static final String USER = "noman_lollol";
+    static final String PASS = "lollol";
+*/
 
     UsersDAO usersDAO;
     Connection conn = null;

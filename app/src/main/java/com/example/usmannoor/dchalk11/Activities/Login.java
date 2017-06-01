@@ -1,9 +1,12 @@
 package com.example.usmannoor.dchalk11.Activities;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -12,13 +15,21 @@ import android.widget.Toast;
 import com.example.usmannoor.dchalk11.BO.UsersDAO;
 import com.example.usmannoor.dchalk11.R;
 
+import static com.example.usmannoor.dchalk11.R.color.offwhite;
+
 public class Login extends AppCompatActivity {
-    ImageButton loginbutton ;
-    ImageButton signupbutton ;
-    TextView username ;
-    TextView password ;
+    ImageButton loginbutton;
+    ImageButton signupbutton;
+    TextView username;
+    TextView password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+            Window window=getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getColor(offwhite));
+        }
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
@@ -37,12 +48,19 @@ public class Login extends AppCompatActivity {
 
                     //TODO authenticate to dao
 
-                    UsersDAO usersDAO=new UsersDAO();
-                    usersDAO.connect_to_db();
+                    UsersDAO usersDAO = new UsersDAO();
+                    int id = usersDAO.authenticate(username.getText().toString(), password.getText().toString());
                     //-----
 
-                    Intent intent = new Intent(Login.this, MainActivity.class);
-                    startActivity(intent);
+                    //TODO check login
+                    if (id > 0) {
+                        System.out.println("LOGGING IN with  "+id );
+                        Intent intent = new Intent(Login.this, MainActivity.class);
+                        Bundle b = new Bundle();
+                        b.putInt("userid", id); //Your id
+                        intent.putExtras(b);
+                        startActivity(intent);
+                    }
 
                 } else {
 
@@ -60,10 +78,7 @@ public class Login extends AppCompatActivity {
         });
 
 
-
     }
-
-
 
 
 }
